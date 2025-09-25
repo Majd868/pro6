@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class BlankFragment3 extends Fragment {
 
-    private Button exitBtn;
+    private Button exitBtn1;
 
     public BlankFragment3() {
         // Required empty public constructor
@@ -25,10 +25,10 @@ public class BlankFragment3 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_blank3, container, false);
 
         // 2. Find your button inside the layout
-        exitBtn = view.findViewById(R.id.exit);
+        exitBtn1 = view.findViewById(R.id.exit);
 
         // 3. Set click listener
-        exitBtn.setOnClickListener(v -> {
+        exitBtn1.setOnClickListener(v -> {
             if (getActivity() != null) {
                 getActivity().finish(); // This closes the activity (and app if it’s the main one)
             }

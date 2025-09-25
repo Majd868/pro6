@@ -45,7 +45,7 @@ public class BlankFragment2 extends Fragment  {
 
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(getActivity(), "Please fill all fields", Toast.LENGTH_SHORT).show();
-            } else if (username.equals("admin") && password.equals("1234")) {
+            } else if (username.equals("saed1") && password.equals("saed12345")) {
                 Toast.makeText(getActivity(), "Login Successful!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getActivity(), "Invalid credentials", Toast.LENGTH_SHORT).show();

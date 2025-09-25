@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         home=new BlankFragment();
-        homeframe=findViewById(R.id.fram1);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fram1,home).commit();
+        homeframe=findViewById(R.id.fram);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fram,home).commit();
         navMenu=findViewById(R.id.nav1);
 
         navMenu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id=item.getItemId();
                 if(id==R.id.exit)
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fram1,new BlankFragment3()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fram,new BlankFragment3()).commit();
                 if(id == R.id.login1){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fram1,new BlankFragment2()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fram,new BlankFragment2()).commit();
                 }
                 return true;
             }
